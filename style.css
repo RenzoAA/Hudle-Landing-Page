@@ -1,0 +1,134 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    font-family: "Poppins";
+    background-color: hsl(257, 40%, 49%);
+}
+.box-all{
+    overflow: hidden;
+    background: url(./images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.box-medium{
+    width: 89%;
+    max-width: 1440px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.nav{
+    width: 100%;
+}
+.nav h1{
+    padding: 32px 0;
+}
+.nav h1 img{
+    width: 200px;
+}
+.section{
+    width: 100%;
+    max-width: 430px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 32px 0 96px;
+}
+.section-img{
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+.section-img img{
+    width: 100%;
+}
+.section-info{
+    width: 100%;
+    text-align: center;
+}
+.section-info h2{
+    color: white;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+.section-info p{
+    color: rgb(230, 230, 230);
+    margin-bottom: 1.5rem;
+}
+.section-info a{
+    display: block;
+    background: white;
+    text-decoration: none;
+    padding: 12px 16px;
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+    color: hsl(257, 40%, 49%);
+    border-radius: 18px;
+    box-shadow: 1px 2px 5px black;
+}
+.icons{
+    /* background: red; */
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 3%;
+    left: calc(50% - 75px);
+}
+.icons i{
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+}
+@media screen and (min-width: 790px){
+    .section{
+        width: 720px;
+        max-width: 720px;
+    }
+    .section-img{
+        width: 50%;
+    }
+    .section-info{
+        width: 45%;
+        text-align: start;
+    }
+    .section-info a{
+        margin: initial;
+        text-align: center;
+    }
+    .icons{
+        left: 80%;
+    } 
+}
+
+@media screen and (min-width: 996px){
+    .section{
+        width: 920px;
+        max-width: 920px;
+    }
+}
+@media screen and (min-width: 1200px){
+    .section{
+        width: 1125px;
+        max-width: 1125px;
+    }
+    .icons{
+        bottom: 6%;
+    }
+}
